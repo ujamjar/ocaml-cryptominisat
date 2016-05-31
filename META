@@ -1,0 +1,7 @@
+version = "0.1.0"
+description = "cryptominisat bindings"
+requires = "ctypes.foreign"
+archive(byte) = "cryptominisat.cma"
+archive(byte, plugin) = "cryptominisat.cma"
+archive(native) = "cryptominisat.cmxa"
+
