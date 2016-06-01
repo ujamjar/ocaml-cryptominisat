@@ -64,6 +64,8 @@ module L = struct
     let get_model = foreign "get_model" (t @-> int @-> returning int) in
     (fun t i -> lbool_of_int (get_model t i))
 
+  let print_stats = foreign "print_stats" (t @-> returning void)
+
 end
 
 type t = 
@@ -130,4 +132,5 @@ let get_all_models s =
   Array.init (s.num_vars+1) 
     (fun i -> if i=0 then U else get_model s i)
 
+let print_stats s = L.print_stats s.solver
 

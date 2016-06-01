@@ -60,6 +60,8 @@ module L : sig
   val get_model : t -> int -> lbool
     (** [get_model solver i] get result for variable [i] *) 
 
+  val print_stats : t -> unit
+    (** print statistics *)
 end
 
 (** {2 high level interface} 
@@ -97,4 +99,8 @@ val get_model : t -> int -> lbool
 
 val get_all_models : t -> lbool array
   (** return results for all variables.  The 0th index will be set to Undefined *)
+
+val print_stats : t -> unit
+  (** print statistics *)
+
 

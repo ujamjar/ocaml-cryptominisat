@@ -1,0 +1,10 @@
+*~
+*.cmo
+*.cmi
+*.cma
+*.cmxa
+*.a
+*.so
+*.html
+*.css
+.*.swp

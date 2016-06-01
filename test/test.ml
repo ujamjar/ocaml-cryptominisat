@@ -25,3 +25,5 @@ let () = soln []
 let () = soln [-3]
 let () = soln []
 
+let () = print_stats s
+

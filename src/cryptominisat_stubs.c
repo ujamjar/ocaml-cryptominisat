@@ -24,6 +24,7 @@ extern "C" {
   extern int solve(SATSolver *s);
   extern int solve_with_assumptions(SATSolver *s, vec assump);
   extern int get_model(SATSolver *s, int i);
+  extern void print_stats(SATSolver *);
 }
 
 void bind(void) { }
@@ -74,5 +75,9 @@ int solve_with_assumptions(SATSolver *s, vec assump) {
 
 int get_model(SATSolver *s, int i) {
   return int_of_lbool(s->get_model()[i]);
+}
+
+void print_stats(SATSolver *s) {
+  s->print_stats();
 }
 
