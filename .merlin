@@ -1,0 +1,5 @@
+S src
+S test
+B .
+PKG ctypes
+PKG ctypes.foreign

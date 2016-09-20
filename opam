@@ -11,7 +11,7 @@ remove: [
 depends: [
   "ocamlfind"
   "base-bytes"
+  "ctypes-foreign"
   "ctypes"
-  "ctypes.foreign"
 ]
 ocaml-version: [ >= "4.01.0" ]
